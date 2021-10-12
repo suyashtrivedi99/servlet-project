@@ -14,6 +14,7 @@ public class SimpleServlet extends HttpServlet {
     String appName = "My Application";
 
     //Initializes the servlet with parameter values defined in the @WebServlet annotation using @WebInitParam annotation
+    @Override
     public void init() throws ServletException {
         appName = getServletContext().getInitParameter("ProductName");
     }
